@@ -1,0 +1,11 @@
+version: '2'
+services:
+    mpgsite-postgresql:
+        image: postgres:9.6.2
+        # volumes:
+        #     - ~/volumes/jhipster/mpgsite/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=mpgsite
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
